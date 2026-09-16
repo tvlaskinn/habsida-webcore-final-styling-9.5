@@ -1,16 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
-  </body>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервисные услуги</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__left">
+
+      <button class="header__button header__button--menu" type="button" aria-label="Открыть меню">
+        <img src="./img/burger.svg" alt="">
+      </button>
+
+      <a class="header__logo" href="#">
+        <img src="./img/logo.svg" alt="CPS">
+      </a>
+    </div>
+
+    <div class="header__right">
+
+      <button class="header__button header__button--call" type="button">
+        <img src="./img/call.svg" alt="Позвонить">
+      </button>
+
+      <button class="header__button header__button--chat" type="button">
+        <img src="./img/chat.svg" alt="Написать">
+      </button>
+
+      <button class="header__button header__button--profile" type="button">
+        <img src="./img/profile.svg" alt="Профиль">
+      </button>
+
+      <button class="header__button header__button--repair" type="button">
+        <img src="./img/repair.svg" alt="Ремонт">
+      </button>
+
+      <button class="header__button header__button--chek-status" type="button">
+        <img src="./img/checkstatus.svg" alt="Проверить Статус">
+      </button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar__header">
+
+      <button class="sidebar__button sidebar__button--close" type="button">
+        <img src="./img/close.svg" alt="Закрать меню">
+      </button>
+
+      <a class="sidebar__logo" href="#">
+        <img src="./img/logo.svg" alt="CPS">
+      </a>
+
+      <button class="sidebar__button sidebader__button--search" type="button">
+        <img src="./img/search.svg" alt="Поиск">
+      </button>
+    </div>
+
+   <nav class="sidebar__navigation">
+    <ul class="sidebar__list">
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Ремонт техники</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Услуги и сервисы</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Корпоративным клиентам</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Продавцам техники </a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Партнёрам</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Производителям</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Наши сервисные центры</a>
+      </li>
+
+      <li class="sidebar__item sidebar__item--active">
+        <a class="sidebar__link" href="#">Контакты</a>
+      </li>
+    </ul>
+   </nav>
+
+ <div class="sidebar__contacts">
+  <div class="sidebar__contact-buttons">
+
+    <button class="sidebar__button sidebar__button--call" type="button">
+      <img src="./img/call.svg" alt="Позвонить">
+    </button>
+
+      <button class="sidebar__button sidebar__button--call" type="button">
+      <img src="./img/chat.svg" alt="Написать">
+    </button>
+
+      <button class="sidebar__button sidebar__button--call" type="button">
+      <img src="./img/profile.svg" alt="Профиль">
+    </button>
+ 
+    <a class="sidebar__email" href="mailto:mail@cps.com">
+      mail@cps.com
+    </a>
+
+     <a class="sidebar__phone" href="tel:88008908900">
+      8 800 890 8900
+    </a>
+
+     <div class="sidebar__languages" >
+       <a class="sidebar__language sidebar__language--active" href="#">RU</a>
+       <a class="sidebar__language" href="#">EN</a>
+       <a class="sidebar__language" href="#">CH</a>
+     </div>
+      
+  </div>
+  </aside>
+
+  <main class="main">
+
+  </main>
+
+</body>
+
 </html>
