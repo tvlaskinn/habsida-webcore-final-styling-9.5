@@ -1,0 +1,56 @@
+.equipment {
+  padding: 24px 0;
+
+  &__title {
+    margin: 0 0 16px;
+    color: $color-gray;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    min-height: 160px;
+    padding: 16px;
+
+    background-color: $color-white;
+    border: 1px solid #eaeaea;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    color: $color-accent;
+    border: 1px solid $color-accent;
+    border-radius: 50%;
+  }
+
+  &__more {
+    margin-top: 16px;
+
+    color: $color-black;
+    font-size: 16px;
+
+    &::before {
+      content: '⌄';
+      margin-right: 8px;
+      color: $color-accent;
+    }
+  }
+}

@@ -1,66 +1,90 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 72px;
+  padding: 0 16px;
+
+  background-color: $color-white;
+  border-bottom: 1px solid $color-accent-light;
+
+  &__left,
+  &__right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 72px;
-    padding: 0 16;
-    background-color: $color-white;
-    border-bottom: 1px solid $color-accent-light;
+  }
 
- &__left,
- &__right {
-
-    display: flex;
-    align-items: center;
-
-    }
-
- &__left {
-   gap: 16px;
- } 
- 
- &__right {
+  &__left {
     gap: 16px;
- }
- 
- &__button {
+  }
+
+  &__right {
+    gap: 16px;
+  }
+
+  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 40px;
     height: 40px;
-    transition: opacity 0.2s ease, transform 0.2s ease;
- }
 
- &:hover{
-    opacity: 0.7;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
 
- }
+    &:hover {
+      opacity: 0.7;
+    }
 
- &:active {
-    transform: scale(0.9);
- }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 
- img {
+  img {
     width: 40px;
     height: 40px;
- }
+  }
 
-
- &__logo {
+  &__logo {
     display: block;
 
     img {
-        width: 97px;
-        height: auto;
+      width: 97px;
+      height: auto;
     }
   }
 
   &__button--call,
   &__button--chat,
   &__button--profile {
-  display: none;
- }
+    display: none;
+  }
+}
 
+@media (min-width: 1366px) {
+  .header {
+    width: calc(100% - 320px);
+    margin-left: 320px;
+  }
+
+  .header__button--menu {
+    display: none;
+  }
+
+  .header__button--call,
+  .header__button--chat,
+  .header__button--profile {
+    display: flex;
+  }
+}
+
+@media (min-width: 1366px) {
+  .header__logo {
+    display: none;
+  }
 }
