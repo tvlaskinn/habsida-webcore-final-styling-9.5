@@ -99,7 +99,7 @@
     &::before {
       margin-right: 8px;
       color: $color-accent-light;
-      content: '›';
+      content: '';
     }
   }
 
@@ -309,7 +309,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
-
   .services {
     padding: 24px;
   }

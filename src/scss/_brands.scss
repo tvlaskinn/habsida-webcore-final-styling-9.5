@@ -50,11 +50,5 @@
 
     color: $color-black;
     font-size: 16px;
-
-    &::before {
-      content: '⌄';
-      margin-right: 8px;
-      color: $color-accent;
-    }
   }
 }

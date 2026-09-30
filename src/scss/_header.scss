@@ -66,24 +66,29 @@
   }
 }
 
-@media (min-width: 1366px) {
-  .header {
-    width: calc(100% - 320px);
-    margin-left: 320px;
-  }
+@media (min-width: 1120px) {
+  .header{
+        display: none;
+    }
 
-  .header__button--menu {
-    display: none;
-  }
+     .header__repair,
+     .header__search {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: auto;
+        height: 40px;
+        margin: 0;
+    }
 
-  .header__button--call,
-  .header__button--chat,
-  .header__button--profile {
-    display: flex;
-  }
+    .header__repair img,
+    .header__searc img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1120px) {
   .header__logo {
     display: none;
   }
