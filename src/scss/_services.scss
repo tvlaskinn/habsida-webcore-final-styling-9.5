@@ -128,53 +128,6 @@
   background-color: $color-background;
 }
 
-.brands__title,
-.equipment__title,
-.prices__title {
-  margin: 0 0 20px;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.brands__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.brands__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  min-height: 72px;
-  padding: 16px;
-
-  background: $color-white;
-  border: 1px solid $color-border;
-
-  text-align: left;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 32px;
-    height: 32px;
-
-    color: $color-accent;
-    border: 1px solid $color-accent;
-    border-radius: 50%;
-  }
-}
 
 .brands__show-more,
 .equipment__show-more {
@@ -185,7 +138,7 @@
   &::before {
     margin-right: 8px;
     color: $color-accent-light;
-    content: '›';
+    content: '';
   }
 }
 
@@ -284,20 +237,11 @@
     }
   }
 
-  .brands__list,
-  .equipment__list {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-  }
-
-  .brands__item {
-    flex: 0 0 240px;
-  }
-
-  .equipment__item {
-    flex: 0 0 240px;
-  }
+ .brands__list,
+ .equipment__list {
+  display: block;
+  overflow: hidden;
+ }
 
   .prices__table {
     overflow-x: auto;
@@ -313,6 +257,10 @@
     padding: 24px;
   }
 
+  .services__actions {
+    display: none;
+  }
+
   .services__description {
     display: flex;
   }
@@ -321,7 +269,27 @@
     width: 45%;
   }
 
-  .brands__list,
+  .brands {
+    .swiper-wrapper {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__list {
+      overflow-x: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__item {
+      flex: 0 0 372px;
+      width: 372px;
+    }
+  }
+
   .equipment__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -330,19 +298,10 @@
     overflow: visible;
   }
 
-  .brands__item {
-    width: auto;
-    min-width: 0;
-  }
-
   .equipment__item {
     width: auto;
     min-width: 0;
     height: 160px;
-  }
-
-  .swiper-wrapper {
-    display: contents;
   }
 
   .swiper-pagination {

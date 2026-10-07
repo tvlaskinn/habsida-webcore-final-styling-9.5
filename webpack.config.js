@@ -63,6 +63,7 @@ module.exports = {
       },
     ],
   },
+  
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
@@ -102,4 +103,5 @@ module.exports = {
       overlay: true // Show errors and warnings in the browser
     }
   },
+  
 };

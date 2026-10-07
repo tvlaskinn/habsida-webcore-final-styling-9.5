@@ -3,7 +3,6 @@ import { Pagination } from 'swiper/modules'
 import '../scss/style.scss'
 
 
-
 const menuButton = document.querySelector('.header__button--menu')
 const closeButton = document.querySelector('.sidebar__button--close')
 const sidebar = document.querySelector('.sidebar')
